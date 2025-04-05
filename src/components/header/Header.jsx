@@ -40,18 +40,23 @@ const Header = () => {
       <div>
         <div className='hidden md:flex container mx-auto flex items-center justify-center h-14 bg-white text-[16px] font-light text-black'>
           <ul className='flex items-center justify-center gap-16'>
-            <li className='cursor-pointer flex items-center gap-2.5'>
-              <CgMail className='text-[#3DB7EF] text-xl' />
-              <span>speedyhiring.info@gmail.com</span>
-            </li>
-            <li className='cursor-default flex items-center gap-2.5'>
-              <IoMdTime className='text-[#3DB7EF] text-xl' />
-              <span>Mon–Sat: 08:00–17:00</span>
-            </li>
-            <li className='cursor-pointer flex items-center gap-2.5'>
-              <FaPhoneAlt className='text-[#3DB7EF]' />
-              <span>+16155383883</span>
-            </li>
+          <li className='cursor-pointer flex items-center gap-2.5'>
+  <CgMail className='text-[#3DB7EF] text-xl' />
+  <a href="https://mail.google.com/mail/u/0/?hl=ru#inbox">
+    <span>speedyhiring.info@gmail.com</span>
+  </a>
+</li>
+<li className='cursor-default flex items-center gap-2.5'>
+  <IoMdTime className='text-[#3DB7EF] text-xl' />
+  <span>Mon–Sat: 08:00–17:00</span>
+</li>
+<li className='cursor-pointer flex items-center gap-2.5'>
+  <FaPhoneAlt className='text-[#3DB7EF]' />
+  <a href="tel:+16155383883">
+    <span>+16155383883</span>
+  </a>
+</li>
+
           </ul>
         </div>
 
@@ -75,12 +80,12 @@ const Header = () => {
           </ul>
 
           <div className='md:hidden flex items-center justify-between w-full'>
+            <img src={logo} alt="logo" className='w-[30px]' />
             <GiHamburgerMenu 
               ref={outsideRef}
               className='text-white text-2xl cursor-pointer' 
               onClick={toggleMobileMenu} 
             />
-            <img src={logo} alt="logo" className='w-[30px]' />
           </div>
         </div>
 
