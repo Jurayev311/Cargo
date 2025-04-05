@@ -58,7 +58,7 @@ const Contact = () => {
                         </div>
                         <input type="number" id="phone" placeholder="+1" className="p-3 rounded bg-gray-800 text-white" required />
                         <input type="email" id="email" placeholder="Your e-mail" className="p-3 rounded bg-gray-800 text-white" required />
-                        <textarea id="message" placeholder="Message" className="p-3 rounded bg-gray-800 text-white h-32" required></textarea>
+                        <textarea id="message" placeholder="Message" className="p-3 rounded resize-none bg-gray-800 text-white h-32" required></textarea>
                         <button type="submit" className="bg-blue-500 hover:bg-blue-600 p-3 rounded text-white font-semibold">SEND MESSAGE</button>
                     </form>
                 </div>

@@ -20,7 +20,7 @@ const About = () => {
                             You are granted complete control over the process of delivery by phone or by our mobile app. Your freight is tracked every step of the way. We provide a high standard of shipping, regardless of its volume. If your company needs to establish a supply chain, we have prepared several readymade solutions with flexible pricing rates for you. Our urgent cargo services offer defined time frames for the convenience of your business. Our supply chain services include shipping, warehousing, packaging, quality control, and distribution.
                         </p>
                         <button className='py-[14px] px-[38px] bg-[#3DB7EF] mt-[37px] text-white cursor-pointer'>
-                            Contact-Us
+                            <a href="#contact">Contact-Us</a>
                         </button>
                     </div>
                 </div>
