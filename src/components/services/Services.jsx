@@ -8,7 +8,7 @@ import car5 from '../../assets/car5.png'
 import car6 from '../../assets/car6.png'
 
 const servicesData = [
-    { title: 'tarnsportation', image: car1 },
+    { title: 'Transportation', image: car1 },
     { title: 'Logistics', image: car2 },
     { title: 'Towing Service', image: car3 },
     { title: 'Maintenance Leasing', image: car4 },
@@ -20,23 +20,24 @@ const Services = () => {
     return (
         <section>
             <div className='bg-[#F5F5F5] pt-[60px] mt-[100px]'>
-                <Title text='our services' />
+                <Title text='Our Services' />
                 <div className='flex items-center justify-center text-center pb-[49px]'>
-                    <p className='w-[750px] flex items-center justify-center'>Our transportation company has been offering a vast set of reliable solutions for businesses and individuals all over the world since our establishment.</p>
+                    <p className='w-full md:w-[750px] flex items-center justify-center'>
+                        Our transportation company has been offering a vast set of reliable solutions for businesses and individuals all over the world since our establishment.
+                    </p>
                 </div>
 
-                <div className='grid grid-cols-3 gap-[30px] container mx-auto'>
-                {
-                    servicesData?.map((service, index) => (
-                        <div key={index}>
-                            <div className='relative'><img src={service.image} alt={service.title} className='w-[369px] h-[250px]' />
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px] container mx-auto'>
+                    {
+                        servicesData?.map((service, index) => (
+                            <div key={index} className='relative'>
+                                <img src={service.image} alt={service.title} className='w-full h-auto max-w-[369px] mx-auto' />
                                 <div className='absolute bottom-5 left-0 py-1 px-3 bg-[#3DB7EF] clip-shape'>
                                     <h2 className='text-white font-bold text-[16px] rounded-[2px]'>{service.title}</h2>
                                 </div>
                             </div>
-                        </div>
-                    ))
-                }
+                        ))
+                    }
                 </div>
             </div>
         </section>
