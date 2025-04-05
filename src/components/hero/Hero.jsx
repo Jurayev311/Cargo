@@ -13,6 +13,7 @@ const Hero = () => {
   return (
     <>
       <Swiper
+        id='main'
         pagination={{ dynamicBullets: true }}
         modules={[Pagination]}
         className="mySwiper"

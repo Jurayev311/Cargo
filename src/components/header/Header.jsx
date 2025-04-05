@@ -13,7 +13,7 @@ const Header = () => {
   };
 
   return (
-    <header>
+    <header id='main'>
         <div>
             <div className='hidden md:flex container mx-auto flex items-center justify-center h-14 bg-white text-[16px] font-light text-black'>
                 <ul className='flex items-center justify-center gap-16'>
@@ -38,17 +38,17 @@ const Header = () => {
 
             <div className='bg-[#172646] h-[52px] flex items-center md:justify-center justify-between px-4 md:px-12'>
                 <ul className='hidden md:flex items-center justify-center gap-7 text-white text-[16px] font-bold'>
-                    <li><a href=""><span>Home</span></a></li>
+                    <li><a href="#main"><span>Home</span></a></li>
                     <div className='text-gray-500'>|</div>
-                    <li><a href=""><span>About Us</span></a></li>
+                    <li><a href="#about"><span>About Us</span></a></li>
                     <div className='text-gray-500'>|</div>
-                    <li><a href=""><span>Our services</span></a></li>
+                    <li><a href="#services"><span>Our services</span></a></li>
                     <div className='text-gray-500'>|</div>
-                    <li><a href=""><span>Why Us</span></a></li>
+                    <li><a href="#why"><span>Why Us</span></a></li>
                     <div className='text-gray-500'>|</div>
-                    <li><a href=""><span>News</span></a></li>
+                    <li><a href="#news"><span>News</span></a></li>
                     <div className='text-gray-500'>|</div>
-                    <li><a href=""><span>Contacts</span></a></li>
+                    <li><a href="#contact"><span>Contacts</span></a></li>
                 </ul>
 
                 <div className='md:hidden'>
@@ -59,12 +59,12 @@ const Header = () => {
             {isMobileMenuOpen && (
                 <div className='md:hidden bg-[#172646]'>
                     <ul className='flex flex-col items-center text-white text-[16px] font-bold py-4'>
-                        <li><a href=""><span>Home</span></a></li>
-                        <li><a href=""><span>About Us</span></a></li>
-                        <li><a href=""><span>Our services</span></a></li>
-                        <li><a href=""><span>Why Us</span></a></li>
-                        <li><a href=""><span>News</span></a></li>
-                        <li><a href=""><span>Contacts</span></a></li>
+                        <li><a href="#main"><span>Home</span></a></li>
+                        <li><a href="#about"><span>About Us</span></a></li>
+                        <li><a href="#services"><span>Our services</span></a></li>
+                        <li><a href="#why"><span>Why Us</span></a></li>
+                        <li><a href="#news"><span>News</span></a></li>
+                        <li><a href="#contact"><span>Contacts</span></a></li>
                     </ul>
                 </div>
             )}

@@ -37,7 +37,7 @@ const Contact = () => {
     
 
     return (
-        <section className="p-6 bg-[#0D1B2A] text-white mt-[80px]">
+        <section id="contact" className="p-6 bg-[#0D1B2A] text-white mt-[80px]">
             <Toaster position="top-center" />
             <div className="container mx-auto flex flex-col md:flex-row gap-6">
                 <div className="md:w-1/2">

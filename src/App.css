@@ -93,3 +93,7 @@ body {
         height: 390px;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}

@@ -31,7 +31,7 @@ const newsItems = [
 
 const News = () => {
   return (
-    <section className="py-12 text-center container mx-auto">
+    <section id='news' className="py-12 text-center container mx-auto">
       <Title text="LATEST NEWS" />
       <div className="grid md:grid-cols-3 gap-8 mt-6 px-4 md:px-16">
         {newsItems.map((item, index) => (

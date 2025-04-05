@@ -18,7 +18,7 @@ const servicesData = [
 
 const Services = () => {
     return (
-        <section>
+        <section id='services'>
             <div className='bg-[#F5F5F5] pt-[60px] mt-[100px]'>
                 <Title text='Our Services' />
                 <div className='flex items-center justify-center text-center pb-[49px]'>

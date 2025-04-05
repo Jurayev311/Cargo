@@ -22,7 +22,7 @@ const Why = () => {
   ];
 
   return (
-    <section className="bg-[#0F1E3B] text-white py-12 text-center mt-[100px]">
+    <section id='why' className="bg-[#0F1E3B] text-white py-12 text-center mt-[100px] pb-[130px]">
       <Title text="WHY CHOOSE US" />
       <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-6 px-4 md:px-16">
         {items.map((item, index) => (
